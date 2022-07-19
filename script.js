@@ -73,5 +73,11 @@ function updateTestimonial() {
   username.innerHTML = name
   role.innerHTML = position
 
-  
+  idx++
+
+  if(idx > testimonials.length - 1) {
+    idx = 0
+  }
 }
+
+setInterval(updateTestimonial, 10000)
