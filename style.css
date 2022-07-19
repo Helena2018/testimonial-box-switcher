@@ -77,6 +77,8 @@ body {
   background-color: #fff;
   height: 4px;
   width: 100%;
+  animation: grow 10s linear infinite;
+  transform-origin: left;
 }
 
 @media(max-width: 768px) {
@@ -85,5 +87,11 @@ body {
   }
   .fa-quote {
     display: none;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
   }
 }
