@@ -62,3 +62,16 @@ const testimonials = [
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit ullam vitae molestias amet eos placeat maxime laborum consequuntur. Laudantium nostrum fugit modi qui, ex, reprehenderit alias illum harum molestias nobis provident sed officia? Quidem nemo maiores, quia magni minus corrupti eligendi aut, velit, aliquid explicabo quisquam natus quam saepe mollitia.'
   },
 ]
+
+let idx = 1
+
+function updateTestimonial() {
+  const {name, position, photo, text} = testimonials[idx]
+
+  testimonial.innerHTML = text
+  userImage.url = photo
+  username.innerHTML = name
+  role.innerHTML = position
+
+  
+}
