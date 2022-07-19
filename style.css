@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   display: flex;
   align-items: center;
@@ -13,4 +14,50 @@ body {
   justify-content: center;
   overflow: hidden;
   height: 100vh;
+  padding: 10px;
+}
+
+.testimonial-container {
+  background-color: #4A00E0;
+  color: #fff;
+  max-width: 768px;
+  padding: 50px 80px;
+  margin: 20px auto;
+  border-radius: 15px;
+  position: relative;
+}
+
+.fa-quote {
+  color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  font-size: 28px;
+  top: 70px;
+}
+
+.fa-quote-right {
+  right: 40px;
+}
+
+.fa-quote-left {
+  left: 40px;
+}
+
+.testimonial {
+  line-height: 28px;
+  text-align: justify;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media(max-width: 768px) {
+  .testimonial-container {
+    padding: 20px 30px;
+  }
+  .fa-quote {
+    display: none;
+  }
 }
