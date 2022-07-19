@@ -64,6 +64,14 @@ body {
   margin-left: 10px;
 }
 
+.user .username {
+  margin: 0;
+}
+
+.user .role {
+  font-weight: normal;
+  margin: 10px 0;
+}
 
 @media(max-width: 768px) {
   .testimonial-container {
